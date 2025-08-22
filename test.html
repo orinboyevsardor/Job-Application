@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        button{
+            margin-top: 20px;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+
+        }
+        .langlevel{
+            margin-left: 50px;
+        }
+        h1{
+            margin-top: 50px;
+            margin-left: 50px;
+            font-size: 70px;
+            margin-bottom: 1px;
+        }
+
+        .maxsus{
+            margin-left: 50px;
+            font-size: 45px;
+            margin-bottom: 1px;
+        }
+        .birinchi{
+            max-width: 800px;
+            font-size: 15px;
+            display: flex;
+            padding: 10px;
+            border-radius: 6px;
+            width: 20%;
+            float: left;
+        }
+        .ora{
+            display: block;
+            display: flex;
+            gap: 15px;
+            height: 30px;
+            margin-left: 50px;
+        }
+        .secondspescial{
+            display: block;
+            display: flex;
+            gap: 300px;
+            margin-left: 50px;
+            font-size: 15px;
+
+        }
+        .yulduz{
+            color: red;
+        }
+        .sardor{
+            display: flex;
+            gap: 180px;
+            margin-left: 50px;
+            font-size: 15px;
+
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        table{
+            margin-left: 50px;
+            width: 50%;
+            border-collapse: collapse;
+        }
+        h3{
+            height: 30px;
+            margin-left: 50px;
+            margin-bottom: 1px;
+        }
+        .fayl{
+            margin-left: 50px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Application</h1>
+        <form action="./sardor.php">
+            <div class="maxsus">
+                <label for="malumot">Please complete the form below to apply for a position with us.</label> <br> <br> <hr> <br>
+                <label for="ism_sharf">Fulname</label> 
+                <label for="sdddd" class="yulduz">*</label>
+                <br>
+            </div>
+            <div  class="ora">
+                 <input type="text" id="firstname" name="firstname" class="birinchi">
+                 <input type="text" id="middlename" name="middlename" class="birinchi">
+                 <input type="text" id="lastname" name="lastname" class="birinchi">
+            </div>
+            <div class="secondspescial">
+                <label for="firstname">First name</label>
+                <label for="middlename">Middlename</label>
+                <label for="lastname">Lastname</label>
+                <br> <br>
+            </div>
+                
+            <div class="maxsus">
+                <label for="tanaparmetrlar">Body Size</label>
+                <label class="yulduz">*</label>
+            </div>
+
+            <div class="ora">
+                <input type="number" id="height" name="height" class="birinchi" placeholder="cm">
+                <input type="number" name="weight" id="weight" class="birinchi" placeholder="kg">
+            </div>
+            
+            <div class="secondspescial">
+                <label for="height">Height</label>
+                <label for="weight">Weight</label>
+            </div>
+
+            <br>
+
+
+            <div class="maxsus">
+                <label for="datar">Birth date</label>
+                <label class="yulduz">*</label>
+            </div>
+            
+
+            <div class="maxsus" style="font-size: 20px;">
+                <select name="month" id="oy" required>
+                    <option value="" disabled selected>Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select name="day" id="day">
+                    <option value="" disabled selected>Day</option>
+                    <script>
+                        for (let i = 1; i <= 31; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+                <select name="yeaar" id="yeaar" required>
+                        <option value="0">please select a yeaar</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>  
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>  
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>  
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                </select>
+            </div>
+            <br> <br>
+
+            <div class="maxsus">
+                <label for="datar">Familiy staus</label>
+            </div>
+
+            <div class="maxsus" style="font-size: 15px;">
+                <input type="radio" name="oila" value="Divorced">
+                <label>Divorced</label> <br>
+                <input type="radio" name="oila" value="Married">
+                <label>Married</label> <br>
+                <input type="radio" name="oila" value="Single">
+                <label>Single</label> <br>
+                <input type="radio" name="oila" value="other">
+                <label>Other</label> <br>
+            </div>
+            <br>
+            <input type="text" name="optinonlar" placeholder="please text another option here" style="height: 30px;margin-left: 50px;">
+
+            <br> <br> <br>
+
+            <label for="gghg" class="maxsus">Current addres</label>
+            <br>
+            <input type="text" name="steer_address" placeholder="Street Address" style="margin-left: 50px;height: 30px;" id="steer_address"> <br>
+            <label for="steer_address" style="margin-left: 50px;">Street <address></address></label> <br>
+            <input type="text" name="steer_address_line" placeholder="steer_address_line"  style="margin-left: 50px;height: 30px;" id="steer_address_line">
+            <br>
+            <label for="steer_address_line" style="margin-left: 50px;height: 30px;">Street Address Line 2</label>
+            <br><br>
+
+            <div style="display: flex; gap: 70px; margin-bottom: 10px; margin-left: 50px;height: 30px;">
+                <input type="text" name="city" placeholder="City">
+                <input type="text" name="state" placeholder="State / Province">
+                
+            </div>
+
+            <div style="margin-left: 50px;display: flex;gap: 220px;">
+                <label for="city">City</label>
+                <label for="province">Province</label>
+            </div>
+
+            
+            <input type="text" name="postal_code" placeholder="Postal / Zip Code" style="height: 30px;margin-left: 50px;" id="postal_code">
+            <br>
+            <label for="postal_code" style="margin-left: 50px;">Zip Code sty</label> <br> <br><br>
+
+            <div style="margin-left: 50px;display: flex;gap: 200px;">
+                <label for="email">Email</label>
+                <label for="phone_number">Phoe number</label>
+            </div>
+            <br>
+            <div style="display: flex;gap: 50px;height: 30px;margin-left: 50px;">
+                <input type="email" name="email" id="email" placeholder="ex:myname@gmail.com">
+                <input type="phone_number" name="phone_number" id="phone_number" placeholder="331680614">
+            </div> <br><br>
+
+            <div style="margin-left: 50px;display: flex;gap: 175px;">
+                <label for="linkelind">Linkelint</label>
+                <label for="experience">Experience</label>
+            </div> <br>
+
+            <div style="display: flex;gap: 50px;height: 30px;margin-left: 50px;">
+                <input type="text" name="linkelind" id="linkelind">
+                <input type="number" name="experience" id="experience" value="1" min="0" max="50">
+            </div>
+            <br><br>
+            <div style="margin-left: 50px;display: flex;gap: 120px;">
+                <label for="position">Position Applied</label>
+                <label for="about">How did you hear about us</label>
+            </div> <br>
+
+            <div style="display: flex;gap: 85px;height: 30px;margin-left: 50px;">
+                <select name="position" id="position">
+                    <option value="selct">pleace select</option>
+                    <option value="marketing">Marketing spesalist</option>
+                    <option value="sales">Sales Manager</option>
+                    <option value="product">Product Lead</option>
+                    <option value="dev">Developer</option>
+                </select>
+                <select name="about" id="about">
+                    <option value="pleace">Pleace select</option>
+                    <option value="linkedin">Linkedin</option>
+                    <option value="event">Event</option>
+                    <option value="social_medial">Social_Medial</option>
+                    <option value="company">Company Websayt</option>
+                    <option value="famil">Familiy/Frend</option>
+                    <option value="other">other</option>
+
+                </select>
+            </div>
+
+            <br>
+            <br>
+            <div style="margin-left: 50px;display: flex;gap: 120px;">
+                <label for="startwork">Available Start Date</label>
+            </div>
+            <input type="date" name="date" id="startwork" style="margin-left: 50px;height: 30px;">
+            
+            <br><br>
+        
+                <div>
+                    <h3>Computer Skills</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    #
+                                </th>
+                                <th>
+                                    Beginer
+                                </th>
+                                <th>
+                                    ELementary
+                                </th>
+                                <th>
+                                    Advance
+                                </th>
+                                <th>
+                                    Excpert
+                                </th>
+                            </tr>
+                     </thead>
+                     <tbody>
+                            <tr>
+                                <td>
+                                    Excel
+                                </td>
+                                <td>
+                                    <input type="radio" name="excel">
+                                </td>
+                                <td>
+                                    <input type="radio" name="excel">
+                                </td>
+                                <td>
+                                    <input type="radio" name="excel">
+                                </td>
+                                <td>
+                                <input type="radio" name="excel">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Word
+                                 </td>
+                                <td>
+                                    <input type="radio" name="word">
+                                </td>
+                                <td>
+                                    <input type="radio" name="word">
+                                </td>
+                                <td>
+                                    <input type="radio" name="word">
+                                </td>
+                                <td>
+                                <input type="radio" name="word">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                     1c
+                                </td>
+                                <td>
+                                     <input type="radio" name="1c">
+                                </td>
+                                <td>
+                                    <input type="radio" name="1c">
+                                </td>
+                                <td>
+                                    <input type="radio" name="1c">
+                                </td>
+                                <td>
+                                    <input type="radio" name="1c">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Programming Language
+                                </td>
+                                <td>
+                                    <input type="radio" name="langu">
+                                </td>
+                                <td>
+                                    <input type="radio" name="langu">
+                                </td>
+                                <td>
+                                    <input type="radio" name="langu">
+                                </td>
+                                <td>
+                                    <input type="radio" name="langu">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>
+    
+
+                <div>
+                    <br><br>
+                    <h3>Ability knowing English Language</h3> 
+                    <div class="langlevel">
+                        <input type="radio" name="engl" value="Beginer">
+                        <label>Beginer</label> <br>
+                        <input type="radio" name="engl" value="Elementary">
+                        <label>Elementary</label> <br>  
+                        <input type="radio" name="engl" value="Advance">
+                        <label>Advance</label> <br>
+                        <input type="radio" name="engl" value="Excpert">
+                        <label>Excpert</label> <br>  
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="fayl">
+                    <label for="drag">Applicant Document(Diploma, Certificate)</label> <br>
+                    <input type="file" name="drag_file" placeholder="Drag and drop your file hera" id="drag">
+                    <br> <br>
+                    <label for="Upload">Upload Your Resume</label> <br>
+                    <input type="file" name="upload_file" id="Upload">
+                    <br><br>
+
+                    <label for="about">Cover Letter</label> <br>
+                    <textarea name="about" id="about" rows="8" cols="100"></textarea>   
+
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit">Apply</button>
+                </div>
+        </form>
+    </header>
+
+
+
+</body>
+</html>
